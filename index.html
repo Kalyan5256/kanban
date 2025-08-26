@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kanban Board</title>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <h1 class="title">Kanban Board</h1>
+    <div class="task-input-global">
+      <input type="text" id="new-task" placeholder="Add new task..." />
+      <button id="add-task">Add</button>
+    </div>
+    <div class="kanban-board">
+      <div class="kanban-column">
+        <h2>To Do</h2>
+        <ul id="todo" class="sortable-column">
+          
+        </ul>
+      </div>
+
+      <div class="kanban-column">
+        <h2>In Progress</h2>
+        <ul id="in-progress" class="sortable-column">
+          
+        </ul>
+      </div>
+
+      <div class="kanban-column">
+        <h2>Completed</h2>
+        <ul id="completed" class="sortable-column">
+          
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
